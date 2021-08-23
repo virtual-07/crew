@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>create - VirtualC</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/3a8ab8a39c.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;900&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="images/logo.png">
+
+    </head>
+    <body>
+       <nav class="navbar">
+           <a href="index.html">
+               <img src="images/logo.png" alt="pic" width="10%" id="logo" >
+           </a>
+           <div class="navbar_container">
+               <a href="index.html" id="navbar_logo">VirtualC</a>
+               <div class="navbar_toggel" id="mobile-menu">
+                   
+                   <span class="bar"></span>
+                   <span class="bar"></span>
+                   <span class="bar"></span>
+
+               </div>
+               <ul class="navbar_menu">
+                    <li class="navbar_item">
+                       <a href="index.html" class="navbar_links">Home</a>
+                    </li>
+
+                    <li class="navbar_item">
+                        <a href="words.html" class="navbar_links">Words</a>
+                    </li>
+
+               </ul>
+           </div>
+       </nav> 
+
+      
+
+        <main role="main">
+            <div class="create-container">
+                <h2 class="form-group-titel">Create..</h2>
+                <div class="form-group">
+                    <label for="user">User: </label>
+                    <input type="text" class="input" id="user" placeholder="user">
+                </div>
+
+                <div class="form-group">
+                    <label for="content">Content: </label>
+                    <input type="text" class="input" id="content" placeholder="content">
+                </div>
+                <button id="create-button">Create</button>
+
+            </div>
+        </main>
+
+
+       <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+       <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+       <script src="app.js"></script>
+       <script src="create.js"></script>
+
+    </body>
+</html>
